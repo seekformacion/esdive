@@ -1,0 +1,88 @@
+.fondo  {
+margin:0px;
+padding:0px;
+background-color: #E2E4EB
+}
+
+
+.barra_sup{ position: fixed;
+			background-color: #527BAD; height:29px; width: 100%;
+			border-bottom: 1px solid white;
+			z-index: 999;
+			}
+
+.in_barra_sub{ 
+	
+	
+    margin: 0 auto;
+    padding: 0;
+    width: 1024px;
+	
+	 }
+
+.page { background: none repeat scroll 0 0 transparent;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    width: 1024px;
+    font-family:Arial;
+    }
+    
+.margen_sup {height:30px;}
+
+.main_col {float: left;}
+.right_col {height: 100%; margin-left: 802px; position: fixed; width: 200px; }
+.adds {margin-left:10px;}
+
+.foto_profile { width: 800px; height: 278px; background-color: blue; border:1px solid white; border-top: 0px; border-bottom: 0px; }
+
+.profile_mini_box{border-right:1px solid red; float:left ; }
+.tit_mini_box {width:100%; height:20px; font-size:13px; font-family:Arial; color:#333333; background-color:#CCCCCC; margin:  }
+.tit_mini_box .text { margin-left: 5px;    margin-top: 3px;    position: absolute;}
+
+.cont_mini_box{height:110px; background-color: #FFFFFF;}
+
+.logged {width:194px;}
+.last {width:320px;}
+.buddies {width:284px;}
+
+
+.data_last { margin-left:5px; margin-top:2px; width:170px; float:left; position:relative;}
+.logo_last { float: left; height: 110px; position: relative; }
+
+.enlace   {color:#416289; font-size:11px; text-decoration: none; }
+.enlace a {color:#416289; font-size:11px; text-decoration: none; }
+
+
+
+
+.detLst {position:relative;height:43px;}
+.DlstT {position:absolute;  height:14px;  text-align: center; color:#333333; font-size:10px; padding: 1px; }
+.ClstB {position:absolute;  height:14px;  text-align: center; border: 1px solid #333333;}
+
+.l1{top:0px;}
+.l2{top:14px;}
+.l3{top:28px;}
+
+.w2 {width:18px}
+.w3 {width:22px}
+.w4 {width:90px;}
+
+.c1 {left:0px;}
+.c2 {left:23px;}
+.c3 {left:53px;}
+.c4 {left:75px;}
+.c5 {left:97px;}
+.c6 {left:124px;}
+.c7 {left:86px;}
+
+
+
+
+.flechNe { background-image: url("img/flechNeg.png"); height: 23px; left: 170px; margin-top: 4px; position: relative; width: 10px; z-index: 899;}
+
+.blq_negro_cent {background-color: #000000; color: #FFFFFF; float: left; height: 23px; margin-left: -5px; padding-left: 5px; position: relative; width: 170px;}
+    
+.blq_negro_cent a {font-size:10px; text-decoration:none; color: #FFFFFF; }
+
+

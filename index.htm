@@ -1,0 +1,160 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<title>eSDIVE</title>
+
+
+
+
+
+<link rel='stylesheet' type='text/css' href='style.css' />
+
+ <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+     google.load('visualization', '1', {'packages': ['geochart']});
+     google.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Zona', 'Inmersiones'],
+        ['Almuñecar', 50],
+        ['Malapascua',   10],
+        ['utila',   10],
+        ['islas galapagos',   10],
+        ['punta cana',   10],
+        ['moalboal',   10],
+        ['sharm el sheikh',  10]
+      ]);
+
+      var options = {
+       
+        displayMode: 'markers',
+        colorAxis: {minValue: 0,  colors: ['#527BAD', '#527BAD']},
+        legend: 'none',
+        sizeAxis: {minValue: 0,  maxSize: 6}
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    };
+    </script>
+
+
+</head>
+
+
+
+<body class="fondo">
+	
+<div class="barra_sup">
+	<div class="in_barra_sub">
+	<div><img src="img/logo.png"></div>	
+	</div>
+</div>	
+
+<div class="page">
+<div class="margen_sup"> </div>
+
+<div class="main_col">
+<div class="foto_profile"><img src="img/fotofondo.jpg"></div>
+
+<div class="profile_mini_box">
+<div class="tit_mini_box"><div class="text">Logged dives: 120</div></div>
+<div class="cont_mini_box logged">
+	 <div id="chart_div" style="width: 194px; height: 110px;"></div>
+</div>
+	
+</div>
+
+<div class="profile_mini_box">
+<div class="tit_mini_box"><div class="text">My latest dive</div></div>
+<div class="cont_mini_box last">
+
+<div class="data_last">
+	<div class="detLst">
+			
+			<div class="DlstT l1 c1 w2">MD</div>
+			<div class="DlstT l2 c1 w2">37</div>
+			<div class="DlstT l3 c1 w2">(m)</div>
+			<div class="ClstB l2 c1 w2"></div>
+			
+			
+			<div class="DlstT l1 c2 w3">Time</div>
+			<div class="DlstT l2 c2 w3">85</div>
+			<div class="DlstT l3 c2 w3">(min)</div>
+			<div class="ClstB l2 c2 w3"></div>
+			
+			
+			<div class="ClstB l2 c3 w4"></div>
+			
+			
+			<div class="DlstT l1 c3 w2">Vol</div>
+			<div class="DlstT l2 c3 w2">12</div>
+			
+			<div class="DlstT l1 c4 w3">Pi</div>
+			<div class="DlstT l2 c4 w3">200</div>
+			
+			<div class="DlstT l1 c5 w3">Pf</div>
+			<div class="DlstT l2 c5 w3">45</div>
+			
+			<div class="DlstT l1 c6 w2">PO</div>
+			<div class="DlstT l2 c6 w2">21</div>
+			
+			<div class="DlstT l3 c3 w2">(L)</div>
+			<div class="DlstT l3 c7 w2">(bar)</div>
+			<div class="DlstT l3 c6 w2">(%)</div>
+			
+			
+			</div>
+
+<div style="clear:both; "></div>
+	
+<div style="margin-top:5px;" class="enlace"><a href="">Malapascua</a> > <a href="">Monad Shoal</a></div>
+	
+<div style="margin-top:5px;" class="blq_negro_cent"><a href="">Con Exotic Island Dive Resort</a></div><div class="flechNe"></div>
+		
+</div>
+	
+<div class="logo_last"><img src="img/logo-cent.gif"></div>
+	
+</div>
+	
+</div>
+
+
+<div class="profile_mini_box">
+<div class="tit_mini_box"><div class="text">My buddies: 120</div></div>
+<div class="cont_mini_box buddies"></div>
+	
+</div>
+
+
+<div style="clear: both;"></div>
+
+
+
+<div style="width: 800px; height: 1000px; border: 1px solid white; background-color: white;"></div>
+
+
+
+</div>
+
+<div class="right_col">
+<div class="adds">
+	asss
+</div>
+	
+</div>
+
+	
+</div>
+	
+	
+	
+	
+</body></html>
