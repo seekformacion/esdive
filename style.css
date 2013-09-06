@@ -36,15 +36,19 @@ background-color: #E2E4EB
 
 .foto_profile { width: 800px; height: 278px; background-color: blue; border:1px solid white; border-top: 0px; border-bottom: 0px; }
 
-.profile_mini_box{border-right:1px solid red; float:left ; }
-.tit_mini_box {width:100%; height:20px; font-size:13px; font-family:Arial; color:#333333; background-color:#CCCCCC; margin:  }
-.tit_mini_box .text { margin-left: 5px;    margin-top: 3px;    position: absolute;}
+.profile_mini_box{ float:left ; }
+.lstd {border-right:1px solid red;border-left:1px solid red;}
+
+.tit_mini_box {width:100%; height:25px; font-size:13px; font-family:Arial; color:#333333; background-color:#CCCCCC; margin:  }
+.tit_mini_box .text { margin-left: 5px;    margin-top: 5px;    position: absolute;}
+.lgd {border-left:1px solid white;}
+.mbudd {border-right:1px solid white;}
 
 .cont_mini_box{height:110px; background-color: #FFFFFF;}
 
 .logged {width:194px;}
 .last {width:320px;}
-.buddies {width:284px;}
+.buddies {width:285px;}
 
 
 .data_last { margin-left:5px; margin-top:2px; width:170px; float:left; position:relative;}
@@ -57,12 +61,12 @@ background-color: #E2E4EB
 
 
 .detLst {position:relative;height:43px;}
-.DlstT {position:absolute;  height:14px;  text-align: center; color:#333333; font-size:10px; padding: 1px; }
+.DlstT {position:absolute;  height:14px;  text-align: center; color:#333333; font-size:10px; padding: 2px 1px 0px 1px; }
 .ClstB {position:absolute;  height:14px;  text-align: center; border: 1px solid #333333;}
 
 .l1{top:0px;}
-.l2{top:14px;}
-.l3{top:28px;}
+.l2{top:15px;}
+.l3{top:29px;}
 
 .w2 {width:18px}
 .w3 {width:22px}
@@ -72,9 +76,9 @@ background-color: #E2E4EB
 .c2 {left:23px;}
 .c3 {left:53px;}
 .c4 {left:75px;}
-.c5 {left:97px;}
+.c5 {left:96px;}
 .c6 {left:124px;}
-.c7 {left:86px;}
+.c7 {left:85px;}
 
 
 
@@ -85,4 +89,6 @@ background-color: #E2E4EB
     
 .blq_negro_cent a {font-size:10px; text-decoration:none; color: #FFFFFF; }
 
+
+.menu {background-color: #CCCCCC; color: #333333; font-family: Arial; font-size: 13px; height: 25px; width: 800px; border-right:1px solid white;border-left:1px solid white;}
 
