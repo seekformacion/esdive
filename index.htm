@@ -6,6 +6,7 @@
 <meta name="viewport" id="viewport" content="width=790" />
 
 
+
 <title>eSDIVE</title>
 
 
@@ -13,6 +14,48 @@
 
 
 <link rel='stylesheet' type='text/css' href='styles2.css' />
+
+
+<!--[if IE]>
+<style>
+.fbtop { width: 17px; height: 20px; background-image:url('img/fopt_ie.png'); position:absolute; top:21px}        
+</style>
+<![endif]-->
+
+
+<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+     google.load('visualization', '1', {'packages': ['geochart']});
+     google.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Zona', 'Inmersiones'],
+        ['Almuñecar', 50],
+        ['Malapascua',   10],
+        ['utila',   10],
+        ['islas galapagos',   10],
+        ['punta cana',   10],
+        ['moalboal',   10],
+        ['Mar rojo',  10], 
+        ['Maldivas',  30]
+      ]);
+
+      var options = {
+       
+        displayMode: 'markers',
+        colorAxis: {minValue: 0,  colors: ['#527BAD', '#527BAD']},
+        tooltip:  {textStyle: { color: '#416289',  fontName: 'Arial',  fontSize: 10,  bold: 0,  italic: 0 }, showColorCode: true}, 
+        legend: 'none',
+        sizeAxis: {minValue: 0,  maxSize: 6}
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    };
+    </script>
+
+
 
 
 </head>
@@ -23,7 +66,7 @@
 	
 <div class="barra_sup">
 	<div class="in_barra_sub">
-	<div><img src="img/logo.png"></div>	
+	<div class="esdiveLogo"><img src="img/logo.png"></div>	
 	</div>
 </div>	
 
@@ -45,18 +88,157 @@
 			<div class="brL"></div>
 			
 			
+			<div class="iconos iahd"></div> 
+			<div class="agruCert">
+				<div class="txtCert">IAHD Instructor</div>
+			</div>
+			<div class="brL"></div>
+			
+			
+			
 			<div class="insur">
 			<div class="iconos dan"></div>
+			<div class="agruCert">
+				<div class="txtCert">Pro Silver Deluxe</div>
+				<div class="txtInsrVal">13/05/2013 - 13/05/2014</div> 
+			</div>
 			</div>
 			
 		</div>
 		
 	</div>
 	<img src="img/fotofondo.jpg" class="fotprof">
+	
+	<div class="botonera">
+		
+		<div class="bot_op bto_main">
+			Principal
+			<div class="fbtop fbt_m"></div>
+		</div>
+	
+		<div class="bot_op bto_logbook">
+			Mi logbook
+		</div>
+		
+		
+	</div>
+	
 </div>
 
-<div class="log_dives bloque shadow"></div>
-<div class="last_dive bloque shadow"></div>
+
+
+
+
+
+<div class="log_dives bloque shadow">
+
+<div class="cab_bloque">
+			<div class="cab_bloque_txt">Logged dives</div>
+</div>	
+
+ <div id="chart_div" style="  height: 111px;    left: -3px;    position: relative;    top: -10px;    width: 211px;    z-index: 700;"></div>	
+</div>
+
+
+
+<div class="last_dive bloque shadow">
+
+		<div class="cab_bloque">
+			<div class="cab_bloque_txt">Mi última inmersión</div>
+		</div>
+	
+		
+		<div class="LstD_club"><img src="img/scubasur.gif" class="LstD_club_img"></div>
+		
+		<div class="detLst">
+			
+			<div class="DlstT l1 c1 w2">MD</div>
+			<div class="DlstT l2 c1 w2">37</div>
+			<div class="DlstT l3 c1 w2">(m)</div>
+			<div class="ClstB l2 c1 w2"></div>
+			
+			
+			<div class="DlstT l1 c2 w3">Time</div>
+			<div class="DlstT l2 c2 w3">85</div>
+			<div class="DlstT l3 c2 w3">(min)</div>
+			<div class="ClstB l2 c2 w3"></div>
+			
+			
+			<div class="ClstB l2 c3 w4"></div>
+			
+			
+			<div class="DlstT l1 c3 w2">Vol</div>
+			<div class="DlstT l2 c3 w2">12</div>
+			
+			<div class="DlstT l1 c4 w3">Pi</div>
+			<div class="DlstT l2 c4 w3">200</div>
+			
+			<div class="DlstT l1 c5 w3">Pf</div>
+			<div class="DlstT l2 c5 w3">45</div>
+			
+			<div class="DlstT l1 c6 w2">PO</div>
+			<div class="DlstT l2 c6 w2">21</div>
+			
+			<div class="DlstT l3 c3 w2">(L)</div>
+			<div class="DlstT l3 c7 w2">(bar)</div>
+			<div class="DlstT l3 c6 w2">(%)</div>
+			
+			
+			</div>
+
+<div class="brL"></div>
+	
+	<div class="lstD_lk" ><a href="" class="enlace">Punta de la Mona > </a><a href="" class="enlace"></a></div>
+	
+	<div class="blq_negro_cent"><a href="">Con Scubasur Almuñecar</a></div><div class="flechNe"></div>
+	
+	
+
+</div>
+
+
+
+
+<div class="My_buddies bloque shadow">
+
+		<div class="cab_bloque">
+			<div class="cab_bloque_txt">Mis compañeros</div>
+		</div>
+	
+		<div class="det_buddies">
+		
+		 <div class="l_buddie"><div class="d_w">12</div><img src="img/buddies/1.jpg"></div> 
+		 <div class="l_buddie"><img src="img/buddies/2.jpg"></div>
+		 <div class="l_buddie"><img src="img/buddies/3.jpg"></div>
+		 <div class="l_buddie"><div class="d_w">105</div><img src="img/buddies/4.jpg"></div>
+		 <div class="l_buddie"><img src="img/buddies/5.jpg"></div>
+		 <div class="l_buddie"><img src="img/buddies/6.jpg"></div>
+		 
+		 
+			<div class="brL"></div>
+		 
+		 <div class="l_buddie"><img src="img/buddies/7.jpg"></div> 
+		 <div class="l_buddie"><div class="d_w">3</div><img src="img/buddies/8.jpg"></div>
+		 <div class="l_buddie"><img src="img/buddies/9.jpg"></div>
+		 <div class="l_buddie"><img src="img/buddies/10.jpg"></div>
+		 <div class="l_buddie"><img src="img/buddies/11.jpg"></div>
+		 <div class="l_buddie"><img src="img/buddies/12.jpg"></div>
+		 
+			
+		</div>
+		
+		
+</div>		
+
+
+
+
+
+
+
+
+
+
 
 
 
