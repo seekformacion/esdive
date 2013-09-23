@@ -1,0 +1,506 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" id="viewport" content="width=790" />
+
+
+
+<title>eSDIVE Logbook</title>
+
+
+
+
+
+
+<script type="text/javascript" src="jquery/jquery-1.9.0.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script type='text/javascript' src='js/basics.js'></script>
+
+<link rel='stylesheet' type='text/css' href='jquery.mCustomScrollbar.css' />
+<link rel='stylesheet' type='text/css' href='styles2.css' />
+
+<script>
+    (function($){
+        $(window).load(function(){
+            $(".content").mCustomScrollbar();
+            $(".content2").mCustomScrollbar();
+        });
+    })(jQuery);
+
+
+    $(".content").mCustomScrollbar({
+    advanced:{
+        updateOnContentResize: true
+    }
+	});
+
+    
+</script>
+
+<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+     google.load('visualization', '1', {'packages': ['geochart']});
+     google.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Zona', 'Inmersiones'],
+        ['Almuñecar', 50],
+        ['Malapascua',   10],
+        ['utila',   10],
+        ['islas galapagos',   10],
+        ['punta cana',   10],
+        ['moalboal',   10],
+        ['Mar rojo',  10], 
+        ['Maldivas',  30]
+      ]);
+
+      var options = {
+       
+        displayMode: 'markers',
+        colorAxis: {minValue: 0,  colors: ['#527BAD', '#527BAD']},
+        tooltip:  {textStyle: { color: '#416289',  fontName: 'Arial',  fontSize: 10,  bold: 0,  italic: 0 }, showColorCode: true}, 
+        legend: 'none',
+        sizeAxis: {minValue: 0,  maxSize: 6}
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    };
+    </script>
+
+
+<!--[if IE]>
+<style>
+.fbtop { width: 17px; height: 20px; background-image:url('img/fopt_ie.png'); position:absolute; top:21px}        
+</style>
+<![endif]-->
+
+
+</head>
+
+
+
+<body class="fondo">
+
+<div class="barra_sup">
+	<div class="in_barra_sub">
+	<div class="esdiveLogo"><img src="img/logo.png"></div>	
+	</div>
+</div>	
+
+
+<div class="page">
+
+
+
+<div class="margen_sup"> </div>
+
+
+
+
+<div class="main_col">
+		
+
+<div class="menuGen bloque shadow">	
+		
+		 <div class="botonera">
+			<div class="bot_op bto_main" onclick="javascript:window.location='index.htm';">
+				Principal
+			</div>
+		
+			<div class="bot_op bto_logbook" onclick="javascript:window.location='logbook.htm';">
+				Mi logbook
+			<div class="fbtop fbt_m"></div>	
+		 </div>
+			
+			
+		</div>
+	</div>	
+	
+	
+<div class="log_prof bloque shadow">
+	
+ <div class="log_colLeft">
+
+	<div class="log_avatar">
+			<img src="img/avatar.jpg">
+			<div class="brL"></div>
+	</div>	
+	
+	
+	<div class="log_seguro">
+		
+		<div class="log_seguro_dat">
+			<div class="log_seguro_txt">Pro Silver Deluxe</div>
+		</div>	
+		
+		<img src="img/dan.gif">
+		
+		<div class="log_seguro_dat">
+			<div class="log_seguro_fec">12/05/2013</div>
+			<div class="log_seguro_fec">12/05/2014</div>
+		</div>	
+		
+		
+				
+	</div>
+	
+	
+	
+	</div>
+
+   <div class="log_prof_opt">
+	
+	
+	
+	<div class="lof_prof_o dives" onclick="javascript:optlog('optLbD');">
+	<div class="log_txt_tit">Inmersiones</div>	
+	
+	<div class="divChrt">
+	<div class="dives1"><div class="alt altd"></div>
+	645
+	</div>
+	<div class="noValD">No Reg</div>
+	<div class="dives2"><div class="ok okd"></div>
+	25
+	</div>	
+	<div class="vdiveL"></div>
+	</div>
+	
+	<div class="log_txt"></div>
+	
+	<div class="log_opt_mk" id="M_optLbD"></div>	
+	</div>
+	<div class="lof_prof_o maxcert"  onclick="javascript:optlog('optLbM');">
+	<div class="log_txt_tit">Certificaciones</div>		
+	<div class="iconosLG padi"><div class="ok oki"></div></div>
+	<div class="log_txt">OWS Instructor.</div>
+	<div class="log_opt_mk"  id="M_optLbM"></div>	
+	</div>
+	<div class="lof_prof_o students" onclick="javascript:optlog('optLbS');">
+	<div class="log_txt_tit">Alumnos Certificados</div>	
+	
+	<div class="stdChrt">
+	<div class="stdent1"><div class="alt altd"></div>
+	95
+	</div>
+	<div class="noValD">No Reg</div>
+	<div class="stdent2"><div class="ok okd"></div>
+	14
+	</div>	
+	<div class="vdiveL"></div>
+	</div>
+	
+	<div class="log_txt"></div>
+	
+	<div class="log_opt_mk"  id="M_optLbS"></div>	
+	</div>
+	
+	<div class="brL"></div>
+	
+	<div class="detOptL" id="optLbD">
+	
+	
+	<div class="content">
+	
+	<div class="dtD">	
+		
+		
+		<div class="dtD_year" onclick="javascript:submenu('s_2013');">2013 <div class="dropy dpD" id="s_2013_F"></div> <div class="dtDToty">5</div></div>
+		
+		
+		<div id="s_2013" style="display: none;">
+		
+			<div class="dtD_zone"   onclick="javascript:submenu('s_2013_Almuñecar');">
+			<div class="dtD_z"><div class="dtDname">Almuñecar</div>   <div class="drop dpD" id="s_2013_Almuñecar_F"></div> <div class="dtDTot">2</div>  <div class="dtDdate">01/05/2013 - 11/05/2013 </div> 
+			
+				<div class="dtD_dives" id="s_2013_Almuñecar" style="display: none;">
+				<div class="dtD_leg"><div class="dtD_dN">DIVE POINT</div><div class="dtD_PO">PO%</div> <div class="dtD_MD">MD</div>  <div class="dtD_dur">TIME</div>   <div class="dtD_time">HOUR</div>    <div class="dtD_dat">DATE</div> </div>
+				<div class="dtD_ed"> <div class="dtD_dN">Punta de la Mona</div>      <div class="dtD_PO">21</div> <div class="dtD_MD">45m</div>  <div class="dtD_dur">62'</div>   <div class="dtD_time">12:00</div>    <div class="dtD_dat">01/08/2013</div> </div> 
+				<div class="dtD_ed"> <div class="dtD_dN">Piedras Atlas</div>        <div class="dtD_PO">29</div> <div class="dtD_MD">35m</div>  <div class="dtD_dur">81'</div>   <div class="dtD_time">10:00</div>    <div class="dtD_dat">03/08/2013</div> </div> 
+				</div>
+			
+			</div>
+			
+			</div>	
+			
+			
+			<div class="dtD_zone dtD_zlst" onclick="javascript:submenu('s_2013_mar_rojo');">	
+			<div class="dtD_z"><div class="dtDname">Mar Rojo </div>   <div class="drop dpD" id="s_2013_mar_rojo_F"></div> <div class="dtDTot">3</div>  <div class="dtDdate">01/05/2013 - 11/05/2013 </div>
+			
+				<div class="dtD_dives" id="s_2013_mar_rojo" style="display: none;">
+				<div class="dtD_leg"><div class="dtD_dN">DIVE POINT</div><div class="dtD_PO">PO%</div> <div class="dtD_MD">MD</div>  <div class="dtD_dur">TIME</div>   <div class="dtD_time">HOUR</div>    <div class="dtD_dat">DATE</div> </div>
+				<div class="dtD_ed"> <div class="dtD_dN">Ras Mohamed</div>      <div class="dtD_PO">21</div> <div class="dtD_MD">45m</div>  <div class="dtD_dur">62'</div>   <div class="dtD_time">12:00</div>    <div class="dtD_dat">01/08/2013</div> </div> 
+				<div class="dtD_ed"> <div class="dtD_dN">Blue Hole</div>        <div class="dtD_PO">29</div> <div class="dtD_MD">35m</div>  <div class="dtD_dur">81'</div>   <div class="dtD_time">10:00</div>    <div class="dtD_dat">03/08/2013</div> </div> 
+				<div class="dtD_ed"> <div class="dtD_dN">Gorgonian Forest</div> <div class="dtD_PO">32</div> <div class="dtD_MD">28m</div>  <div class="dtD_dur">75'</div>   <div class="dtD_time">12:30</div>    <div class="dtD_dat">03/08/2013</div> </div> 
+				</div>
+			
+			</div>
+			
+			
+			</div>
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		<div class="dtD_year" onclick="javascript:submenu('s_2012');">2012 <div class="dropy dpD" id="s_2012_F"></div> <div class="dtDToty">15</div></div>
+		
+		
+		<div id="s_2012" style="display: none;">
+		
+			<div class="dtD_zone"   onclick="javascript:submenu('s_2012_Almuñecar');">
+			<div class="dtD_z"><div class="dtDname">Almuñecar</div>   <div class="drop dpD" id="s_2012_Almuñecar_F"></div> <div class="dtDTot">2</div>  <div class="dtDdate">01/05/2013 - 11/05/2013 </div> 
+			
+				<div class="dtD_dives" id="s_2012_Almuñecar" style="display: none;">
+				<div class="dtD_leg"><div class="dtD_dN">DIVE POINT</div><div class="dtD_PO">PO%</div> <div class="dtD_MD">MD</div>  <div class="dtD_dur">TIME</div>   <div class="dtD_time">HOUR</div>    <div class="dtD_dat">DATE</div> </div>
+				<div class="dtD_ed"> <div class="dtD_dN">Punta de la Mona</div>      <div class="dtD_PO">21</div> <div class="dtD_MD">45m</div>  <div class="dtD_dur">62'</div>   <div class="dtD_time">12:00</div>    <div class="dtD_dat">01/08/2013</div> </div> 
+				<div class="dtD_ed"> <div class="dtD_dN">Piedras Atlas</div>        <div class="dtD_PO">29</div> <div class="dtD_MD">35m</div>  <div class="dtD_dur">81'</div>   <div class="dtD_time">10:00</div>    <div class="dtD_dat">03/08/2013</div> </div> 
+				</div>
+			
+			</div>
+			
+			</div>	
+			
+			
+			<div class="dtD_zone dtD_zlst" onclick="javascript:submenu('s_2012_mar_rojo');">	
+			<div class="dtD_z"><div class="dtDname">Mar Rojo </div>   <div class="drop dpD" id="s_2012_mar_rojo_F"></div> <div class="dtDTot">3</div>  <div class="dtDdate">01/05/2013 - 11/05/2013 </div>
+			
+				<div class="dtD_dives" id="s_2012_mar_rojo" style="display: none;">
+				<div class="dtD_leg"><div class="dtD_dN">DIVE POINT</div><div class="dtD_PO">PO%</div> <div class="dtD_MD">MD</div>  <div class="dtD_dur">TIME</div>   <div class="dtD_time">HOUR</div>    <div class="dtD_dat">DATE</div> </div>
+				<div class="dtD_ed"> <div class="dtD_dN">Ras Mohamed</div>      <div class="dtD_PO">21</div> <div class="dtD_MD">45m</div>  <div class="dtD_dur">62'</div>   <div class="dtD_time">12:00</div>    <div class="dtD_dat">01/08/2013</div> </div> 
+				<div class="dtD_ed"> <div class="dtD_dN">Blue Hole</div>        <div class="dtD_PO">29</div> <div class="dtD_MD">35m</div>  <div class="dtD_dur">81'</div>   <div class="dtD_time">10:00</div>    <div class="dtD_dat">03/08/2013</div> </div> 
+				<div class="dtD_ed"> <div class="dtD_dN">Gorgonian Forest</div> <div class="dtD_PO">32</div> <div class="dtD_MD">28m</div>  <div class="dtD_dur">75'</div>   <div class="dtD_time">12:30</div>    <div class="dtD_dat">03/08/2013</div> </div> 
+				</div>
+			
+			</div>
+			
+			
+			</div>
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+	   </div>
+ 	</div>
+		
+		<div id="chart_div" class="mapDetLog"></div>		
+
+
+
+</div>	
+	<div class="brL"></div>
+	
+	
+	<div class="detOptL" id="optLbM">
+	
+	
+	<div class="content2">
+	<div class="logCert_F1">
+	
+	<div class="iconosLC padi"></div>
+	<div class="linDivORG">
+		<div class="logCleg1">Titulación</div>
+		<div class="logCleg2">Expedido</div>
+		<div class="logCleg3">Renovación</div>
+		<div class="logCleg4">Teaching</div>
+	</div>
+	
+	<div class="logCertLin"> 
+		<div class="logCert_name">Open Water Scuba Instructor</div> 
+		<div class="logCert_date">2013</div> <div class="ok okt"></div> <div class="ok okc"></div> 
+		<div class="logCert_date">23/11/2011</div>  
+	</div>
+	
+	
+	<div class="logCertLin"> 
+		<div class="logCert_name">EFR Instructor</div> 
+		<div class="logCert_date">2013</div> <div class="ok okt"></div> <div class="ok okc"></div>  
+		<div class="logCert_date">23/11/2011</div>  
+	</div>
+	
+	<div class="linB"></div>	
+	
+	<div class="logCertLin"> 
+		<div class="logCert_name">Enriched Air Instructor</div> 
+		<div class="logCert_date">N/A</div> <div class="alt okc"></div> 
+		<div class="logCert_date">15/12/2011</div>  
+	</div>
+	
+	<div class="logCertLin"> 
+		<div class="logCert_name">Care for Children w/AED Instructor</div> 
+		<div class="logCert_date">N/A </div> <div class="ok okc"></div> 
+		<div class="logCert_date">23/11/2011</div>  
+	</div>
+	
+	<div class="logCertLin"> 
+		<div class="logCert_name">Peak Performance Buoyancy Instructor</div> 
+		<div class="logCert_date">N/A</div> <div class="ok okc"></div> 
+		<div class="logCert_date">23/11/2011</div>  
+	</div>
+	
+	<div class="logCertLin"> 
+		<div class="logCert_name">Project Aware Instructor</div> 
+		<div class="logCert_date">N/A   </div> <div class="ok okc"></div> 
+		<div class="logCert_date">23/11/2011</div>  
+	</div>
+	
+	
+	
+	<div class="logCertLin"> 
+		<div class="logCert_name">AWARE Coral Reef Conservation Sp Instructor</div> 
+		<div class="logCert_date">N/A   </div> <div class="ok okc"></div> 
+		<div class="logCert_date">23/11/2011</div>  
+	</div>
+
+	<div class="linB"></div>
+	<div class="logCertLin"> 
+		<div class="logCert_name">Divemaster</div> 
+		<div class="logCert_date">N/A</div> <div class="ok okc"></div> 
+		<div class="logCert_date">17/08/2009</div>  
+	</div>
+	
+
+		
+	</div>	
+	
+	</div>
+	
+	</div>
+	<div class="brL"></div>
+	
+	
+	<div class="detOptL" id="optLbS"></div>	
+	<div class="brL"></div>	
+		
+		
+		
+		
+		
+	</div>
+	
+	
+	
+	<div class="brL"></div>
+	
+	
+
+	
+	
+
+
+
+
+</div>
+
+
+	<div class="lat_main"></div>
+	
+	
+	<div class="cont_main"></div>
+
+</div>
+	
+<div class="right_col">
+	
+<div class="adds">
+		<div class="tit_add"><a href="">Curso RESCUE + EFR</a></div>	
+		<div class="text_add">
+		<img src="img/rescue.jpg" class="img_add">	
+		Oferta especial puente de Mayo. 350€ Curso Rescue y EFR. vente a bucear a La herradura y pasatelo en grande mientras realizas este divertido curso.
+		</div>
+<div class="brL"></div>				
+</div>
+
+
+<div class="adds">
+		<div class="tit_add"><a href="">Curso RESCUE + EFR</a></div>	
+		<div class="text_add">
+		<img src="img/rescue.jpg" class="img_add">	
+		Oferta especial puente de Mayo. 350€ Curso Rescue y EFR. vente a bucear a La herradura y pasatelo en grande mientras realizas este divertido curso.
+		</div>
+<div class="brL"></div>				
+</div>
+
+
+<div class="adds">
+		<div class="tit_add"><a href="">Curso RESCUE + EFR</a></div>	
+		<div class="text_add">
+		<img src="img/rescue.jpg" class="img_add">	
+		Oferta especial puente de Mayo. 350€ Curso Rescue y EFR. vente a bucear a La herradura y pasatelo en grande mientras realizas este divertido curso.
+		</div>
+<div class="brL"></div>				
+</div>
+
+
+
+<div class="adds">
+		<div class="tit_add"><a href="">Curso RESCUE + EFR</a></div>	
+		<div class="text_add">
+		<img src="img/rescue.jpg" class="img_add">	
+		Oferta especial puente de Mayo. 350€ Curso Rescue y EFR. vente a bucear a La herradura y pasatelo en grande mientras realizas este divertido curso.
+		</div>
+<div class="brL"></div>				
+</div>
+
+	
+</div>
+	
+<div class="bottom_col">
+	
+	
+<div class="adds">
+		<div class="tit_add"><a href="">Curso RESCUE + EFR</a></div>	
+		<div class="text_add">
+		<img src="img/rescue.jpg" class="img_add">	
+		Oferta especial puente de Mayo. 350€ Curso Rescue y EFR. vente a bucear a La herradura y pasatelo en grande mientras realizas este divertido curso.
+		</div>	
+<div class="brL"></div>	
+</div>	
+
+
+<div class="adds">
+		<div class="tit_add"><a href="">Curso RESCUE + EFR</a></div>	
+		<div class="text_add">
+		<img src="img/rescue.jpg" class="img_add">	
+		Oferta especial puente de Mayo. 350€ Curso Rescue y EFR. vente a bucear a La herradura y pasatelo en grande mientras realizas este divertido curso.
+		</div>	
+<div class="brL"></div>	
+</div>
+
+
+<div class="adds">
+		<div class="tit_add"><a href="">Curso RESCUE + EFR</a></div>	
+		<div class="text_add">
+		<img src="img/rescue.jpg" class="img_add">	
+		Oferta especial puente de Mayo. 350€ Curso Rescue y EFR. vente a bucear a La herradura y pasatelo en grande mientras realizas este divertido curso.
+		</div>	
+<div class="brL"></div>	
+</div>
+
+<div class="adds">
+		<div class="tit_add"><a href="">Curso RESCUE + EFR</a></div>	
+		<div class="text_add">
+		<img src="img/rescue.jpg" class="img_add">	
+		Oferta especial puente de Mayo. 350€ Curso Rescue y EFR. vente a bucear a La herradura y pasatelo en grande mientras realizas este divertido curso.
+		</div>	
+<div class="brL"></div>	
+</div>
+	
+</div>
+
+	
+<script>optlog('optLbD');</script>	
+</body></html>
