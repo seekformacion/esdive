@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script>
+
+
+    
+$(function () {$(window).bind( "scroll", function(e) {
+var top=f_scrollTop();
+var hM =$("#cmenu").height();
+var hW =window.innerHeight;
+var dif= hW - hM;
+var fH=$("#cmenu").height();
+
+var max = $("#footer");
+var footP=max.position().top;
+
+
+if(dif<0){dif=dif*-1; var limit=80+dif;}else{var limit=80;}
+var ptop=80-limit;
+
+var ptop2=footP-hM-ptop;
+
+//console.log('top:' +top);
+
+
+if(top>limit){
+document.getElementById('cmenu').className='fijo';
+if(top>ptop2){
+	
+	//var dop=ptop+(fH+footP-top);
+	//console.log('calc:' + ptop + '+(' + fH + '+' + footP + '-' + top);
+	//console.log('ch:' + (top+hW-footP));
+	//console.log('footP:' +footP);
+	
+	    var dop=top+hW-footP;
+		//document.getElementById('cmenu').className='fijob';
+		document.getElementById("cmenu").removeAttribute("style");
+		document.getElementById('cmenu').style.bottom=dop + 'px';
+		
+	
+	
+	}else{
+		
+		var dop=ptop;
+		document.getElementById("cmenu").removeAttribute("style");
+		document.getElementById('cmenu').style.top=dop + 'px';
+		}
+
+
+
+
+}else{
+document.getElementById('cmenu').className='nofijo';	
+};
+});});
+
+function f_scrollTop() {
+	return f_filterResults (
+		window.pageYOffset ? window.pageYOffset : 0,
+		document.documentElement ? document.documentElement.scrollTop : 0,
+		document.body ? document.body.scrollTop : 0
+	);
+}
+function f_filterResults(n_win, n_docel, n_body) {
+	var n_result = n_win ? n_win : 0;
+	if (n_docel && (!n_result || (n_result > n_docel)))
+		n_result = n_docel;
+	return n_body && (!n_result || (n_result > n_body)) ? n_body : n_result;
+}
+
+	
+</script>
+
+<style>
+.fijo {position:fixed; width:300px;}
+.nofijo {width:300px;}		
+</style>
+
+</head>
+
+<body style="margin: 0">
+	
+	
+<div style="position:relative; width:1000px; margin: 0 auto; background-color: #EEEEEE;">
+
+
+
+<div style="position:relative; float: left;  width: 1000px; height:80px; background-color: blue;"></div>	
+	
+<div style="position:relative; float: left;  width: 1000px;">
+
+
+<div style="position:relative; float:left;  width: 300px; background-color: red; height: 50px;"></div>
+
+<aside id="menu" style="position:absolute;  width: 300px; background-color: orange; bottom:0; top:0; left: 0;">
+
+<div id="cmenu">
+<div style="height:50px; position:relative;float:left;margin:15px;border:1px solid #999999; width:268px; background-color: white; ">version2</div>
+<div style="height:150px; position:relative;float:left;margin:15px;border:1px solid #999999; width:268px; background-color: white; "></div>
+<div style="height:80px; position:relative;float:left;margin:15px;border:1px solid #999999; width:268px; background-color: white; "></div>
+<div style="height:30px; position:relative;float:left;margin:15px;border:1px solid #999999; width:268px; background-color: white; "></div>
+<div style="height:50px; position:relative;float:left;margin:15px;border:1px solid #999999; width:268px; background-color: white; "></div>
+<div style="height:150px; position:relative;float:left;margin:15px;border:1px solid #999999; width:268px; background-color: white; "></div>
+<div style="height:80px; position:relative;float:left;margin:15px;border:1px solid #999999; width:268px; background-color: white; "></div>
+<div style="height:30px; position:relative;float:left;margin:15px;border:1px solid #999999; width:268px; background-color: white; "></div>
+
+<div style="clear: both"></div>	
+</div>
+
+</aside>	
+	
+
+
+<div style="position:relative; float:left;  width: 700px;   background-color: #CCCCCC; top:0; min-height: 600px; ">
+<div style="position:relative; float:left; width:660px; margin: 20px; height: 150px; background-color: #ffffff;"></div>	
+<div style="position:relative; float:left; width:660px; margin: 20px; height: 150px; background-color: #ffffff;"></div>	
+<div style="position:relative; float:left; width:660px; margin: 20px; height: 150px; background-color: #ffffff;"></div>	
+<div style="position:relative; float:left; width:660px; margin: 20px; height: 150px; background-color: #ffffff;"></div>	
+<div style="position:relative; float:left; width:660px; margin: 20px; height: 150px; background-color: #ffffff;"></div>	
+<div style="position:relative; float:left; width:660px; margin: 20px; height: 150px; background-color: #ffffff;"></div>	
+<div style="position:relative; float:left; width:660px; margin: 20px; height: 150px; background-color: #ffffff;"></div>	
+<div style="position:relative; float:left; width:660px; margin: 20px; height: 150px; background-color: #ffffff;"></div>	
+</div>
+
+
+<div style="clear: both"></div>	
+</div>	
+
+
+	
+<div id="footer" style="position:relative; float: left; width: 1000px; height:80px; background-color: blue;"></div>		
+</div>
+
+
+
+
+	
+</body>
+</html>
